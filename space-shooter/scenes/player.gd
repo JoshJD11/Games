@@ -6,7 +6,9 @@ signal laser(pos)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	position = Vector2(100, 500)
+	var width = get_viewport().get_visible_rect().size[0]
+	var height = get_viewport().get_visible_rect().size[1]
+	position = Vector2(width/2, height)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

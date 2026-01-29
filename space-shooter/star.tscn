@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://ojspckhw0pa2"]
+
+[ext_resource type="Script" uid="uid://c3s7p8pdnhaeq" path="res://star.gd" id="1_d7oe7"]
+[ext_resource type="Texture2D" uid="uid://t5j1riqyxqxx" path="res://graphics/PNG/Effects/star1.png" id="2_dvwch"]
+[ext_resource type="Texture2D" uid="uid://cbr3bjxrjr8hm" path="res://graphics/PNG/Effects/star2.png" id="3_fi5u8"]
+[ext_resource type="Texture2D" uid="uid://c3oxoeu0yqt6y" path="res://graphics/PNG/Effects/star3.png" id="4_0ar2v"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ynkmc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_dvwch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fi5u8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0ar2v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fi5u8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_dvwch")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[node name="Star" type="Node2D" unique_id=356603920]
+script = ExtResource("1_d7oe7")
+
+[node name="StarAnimation" type="AnimatedSprite2D" parent="." unique_id=1246680916]
+sprite_frames = SubResource("SpriteFrames_ynkmc")
+autoplay = "default"
+frame = 4
+frame_progress = 0.68464786

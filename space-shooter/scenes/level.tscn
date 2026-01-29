@@ -1,23 +1,24 @@
 [gd_scene format=3 uid="uid://cbyp1xwa5d3e1"]
 
 [ext_resource type="Script" uid="uid://df2po7qljpmrc" path="res://scenes/level.gd" id="1_ppgk2"]
-[ext_resource type="Texture2D" uid="uid://b2jrkys2dk48k" path="res://graphics/Backgrounds/darkPurple.png" id="1_w8frs"]
+[ext_resource type="Texture2D" uid="uid://cv7iw1nx2g5xx" path="res://graphics/Backgrounds/background.svg" id="2_klq6b"]
 [ext_resource type="PackedScene" uid="uid://wps0hpecyxnr" path="res://scenes/player.tscn" id="2_mx8sn"]
+[ext_resource type="PackedScene" uid="uid://ojspckhw0pa2" path="res://star.tscn" id="3_ppgk2"]
 [ext_resource type="Script" uid="uid://cmtpm66l84cbo" path="res://scenes/timer.gd" id="4_mx8sn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w8frs"]
-size = Vector2(209, 722.5)
+size = Vector2(209.125, 726.25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mx8sn"]
-size = Vector2(1711, 76)
+size = Vector2(1704.5, 77.5)
 
 [node name="Level" type="Node2D" unique_id=773411851]
 script = ExtResource("1_ppgk2")
 
 [node name="BG" type="Sprite2D" parent="." unique_id=536313391]
-position = Vector2(641.5, 359)
-scale = Vector2(5.0195313, 2.8203125)
-texture = ExtResource("1_w8frs")
+position = Vector2(643.0002, 397.50003)
+scale = Vector2(0.33541676, 0.36898148)
+texture = ExtResource("2_klq6b")
 
 [node name="Player" parent="." unique_id=1975941455 instance=ExtResource("2_mx8sn")]
 position = Vector2(-6, 274)
@@ -28,28 +29,28 @@ position = Vector2(-6, 274)
 collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D" unique_id=142807782]
-position = Vector2(1386.5, 361.75)
+position = Vector2(1387.875, 361.75)
 shape = SubResource("RectangleShape2D_w8frs")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Borders" unique_id=173136433]
 collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D2" unique_id=1859350490]
-position = Vector2(-107, 362)
+position = Vector2(-105.5625, 360.125)
 shape = SubResource("RectangleShape2D_w8frs")
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="Borders" unique_id=1487192097]
 collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D3" unique_id=2141745145]
-position = Vector2(638, -41)
+position = Vector2(638, -40.5)
 shape = SubResource("RectangleShape2D_mx8sn")
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="Borders" unique_id=1307336850]
 collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D4" unique_id=751124771]
-position = Vector2(644, 760)
+position = Vector2(640.75, 759.75)
 shape = SubResource("RectangleShape2D_mx8sn")
 
 [node name="MeteorTimer" type="Timer" parent="." unique_id=1956844668]
@@ -60,6 +61,38 @@ script = ExtResource("4_mx8sn")
 [node name="Meteors" type="Node2D" parent="." unique_id=1242509820]
 
 [node name="Lasers" type="Node2D" parent="." unique_id=2020833992]
+
+[node name="Stars" type="Node2D" parent="." unique_id=1550626916]
+
+[node name="Star" parent="Stars" unique_id=356603920 instance=ExtResource("3_ppgk2")]
+
+[node name="Star2" parent="Stars" unique_id=2067384605 instance=ExtResource("3_ppgk2")]
+
+[node name="Star3" parent="Stars" unique_id=1166833526 instance=ExtResource("3_ppgk2")]
+
+[node name="Star4" parent="Stars" unique_id=1996950942 instance=ExtResource("3_ppgk2")]
+
+[node name="Star5" parent="Stars" unique_id=1494780352 instance=ExtResource("3_ppgk2")]
+
+[node name="Star6" parent="Stars" unique_id=1821359509 instance=ExtResource("3_ppgk2")]
+
+[node name="Star7" parent="Stars" unique_id=1514600604 instance=ExtResource("3_ppgk2")]
+
+[node name="Star8" parent="Stars" unique_id=142212666 instance=ExtResource("3_ppgk2")]
+
+[node name="Star9" parent="Stars" unique_id=1505377887 instance=ExtResource("3_ppgk2")]
+
+[node name="Star10" parent="Stars" unique_id=557297899 instance=ExtResource("3_ppgk2")]
+
+[node name="Star11" parent="Stars" unique_id=1804580081 instance=ExtResource("3_ppgk2")]
+
+[node name="Star12" parent="Stars" unique_id=1584129727 instance=ExtResource("3_ppgk2")]
+
+[node name="Star13" parent="Stars" unique_id=453942716 instance=ExtResource("3_ppgk2")]
+
+[node name="Star14" parent="Stars" unique_id=1511605109 instance=ExtResource("3_ppgk2")]
+
+[node name="Star15" parent="Stars" unique_id=1425342738 instance=ExtResource("3_ppgk2")]
 
 [connection signal="laser" from="Player" to="." method="_on_player_laser"]
 [connection signal="timeout" from="MeteorTimer" to="." method="_on_meteor_timer_timeout"]
