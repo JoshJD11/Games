@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://df2po7qljpmrc" path="res://scenes/level.gd" id="1_ppgk2"]
 [ext_resource type="Texture2D" uid="uid://cv7iw1nx2g5xx" path="res://graphics/Backgrounds/background.svg" id="2_klq6b"]
 [ext_resource type="PackedScene" uid="uid://wps0hpecyxnr" path="res://scenes/player.tscn" id="2_mx8sn"]
-[ext_resource type="PackedScene" uid="uid://ojspckhw0pa2" path="res://star.tscn" id="3_ppgk2"]
+[ext_resource type="PackedScene" uid="uid://ojspckhw0pa2" path="res://scenes/star.tscn" id="3_ppgk2"]
 [ext_resource type="Script" uid="uid://cmtpm66l84cbo" path="res://scenes/timer.gd" id="4_mx8sn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w8frs"]
@@ -93,6 +93,21 @@ script = ExtResource("4_mx8sn")
 [node name="Star14" parent="Stars" unique_id=1511605109 instance=ExtResource("3_ppgk2")]
 
 [node name="Star15" parent="Stars" unique_id=1425342738 instance=ExtResource("3_ppgk2")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1375453966]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1706734064]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -40.5
+offset_right = 40.5
+offset_bottom = 23.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 50
+text = "1234"
+horizontal_alignment = 1
 
 [connection signal="laser" from="Player" to="." method="_on_player_laser"]
 [connection signal="timeout" from="MeteorTimer" to="." method="_on_meteor_timer_timeout"]
