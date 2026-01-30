@@ -1,5 +1,7 @@
 extends Area2D
 
+signal collision
+
 var speed: int
 var rotation_speed: int
 var direction_x: float
@@ -31,5 +33,9 @@ func _process(delta):
 	
 
 func _on_body_entered(_body: Node2D) -> void:
-	print("body entered")
+	collision.emit()
 	
+	
+func _on_area_entered(area: Area2D) -> void:
+	area.queue_free()
+	queue_free()

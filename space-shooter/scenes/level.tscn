@@ -13,7 +13,7 @@ size = Vector2(209.125, 726.25)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mx8sn"]
 size = Vector2(1704.5, 77.5)
 
-[node name="Level" type="Node2D" unique_id=773411851]
+[node name="Level" type="Node2D" unique_id=773411851 groups=["ui"]]
 script = ExtResource("1_ppgk2")
 
 [node name="BG" type="Sprite2D" parent="." unique_id=536313391]
