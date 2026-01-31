@@ -97,5 +97,12 @@ script = ExtResource("4_mx8sn")
 
 [node name="UI" parent="." unique_id=1639010790 instance=ExtResource("6_2r41h")]
 
+[node name="Pills" type="Node2D" parent="." unique_id=628449324]
+
+[node name="PillTimer" type="Timer" parent="." unique_id=1487827618]
+wait_time = 5.0
+autostart = true
+
 [connection signal="laser" from="Player" to="." method="_on_player_laser"]
 [connection signal="timeout" from="MeteorTimer" to="." method="_on_meteor_timer_timeout"]
+[connection signal="timeout" from="PillTimer" to="." method="_on_pill_timer_timeout"]
