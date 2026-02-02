@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://taq05n0ymctx"]
+
+[ext_resource type="Script" uid="uid://bg5fbeymmbe2h" path="res://scenes/attack.gd" id="1_jy1op"]
+[ext_resource type="Texture2D" uid="uid://c5g86fbepr5ib" path="res://Graphics/Attacks/PNG/2/3.png" id="1_nursx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nsl4x"]
+size = Vector2(111, 34)
+
+[node name="Attack" type="Area2D" unique_id=75507243]
+script = ExtResource("1_jy1op")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1320859047]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_nursx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=612831002]
+position = Vector2(-12.5, 7)
+shape = SubResource("RectangleShape2D_nsl4x")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
