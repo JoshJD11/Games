@@ -1,6 +1,16 @@
 extends Area2D
 
 @export var speed := 600.0
+var direction := 1
+
+func set_direction(dir: String) -> void:
+	if dir == "left":
+		direction = -1
+		$Sprite2D.flip_h = true
+	else:
+		direction = 1
+		$Sprite2D.flip_h = false
+	
 
 func _ready() -> void:
 	var tween = create_tween()
@@ -8,10 +18,9 @@ func _ready() -> void:
 
 
 func _process(delta: float) -> void:
-	position.x += speed * delta
+	position.x += speed * direction * delta
 
 
 func _on_body_entered(body: Node2D) -> void: #Temporal
-	if not body.is_in_group("player"):
-		queue_free()
-		body.queue_free()
+	queue_free()
+	body.queue_free()

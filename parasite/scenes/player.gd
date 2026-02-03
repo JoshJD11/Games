@@ -2,28 +2,37 @@ extends CharacterBody2D
 
 @export var speed := 300.0
 @onready var sprite: AnimatedSprite2D = $PlayerSprite
-signal attack(pos)
+signal attack(pos, dir)
 
 var attacking := false
+var facing := 'right'
 
 func _ready() -> void:
-	add_to_group("player")
+	pass
 
 func _process(_delta: float) -> void:
 	var direction = Input.get_vector("left", "right", "up", "down")
 	velocity = direction * speed
 	move_and_slide()
+	
+	if direction.x > 0:
+		facing = 'right'
+	elif direction.x < 0:
+		facing = 'left'
 
 	if Input.is_action_just_pressed("Attack") and not attacking:
 		attacking = true
-		sprite.play("attack")
+		sprite.play("attack-" + facing)
 		await sprite.animation_finished
-		attack.emit($AttackStartPosition.global_position)
+		if facing == "right":
+			attack.emit($AttackRightStartPosition.global_position, facing)
+		else:
+			attack.emit($AttackLeftStartPosition.global_position, facing)
 		attacking = false
 		return
 
 	if not attacking:
-		if direction != Vector2.ZERO and sprite.animation != "walking":
-			sprite.play("walking")
-		elif direction == Vector2.ZERO and sprite.animation != "static":
-			sprite.play("static")
+		if direction != Vector2.ZERO:
+			sprite.play("walking-" + facing)
+		else:
+			sprite.play("static-" + facing)

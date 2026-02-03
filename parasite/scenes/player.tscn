@@ -1,45 +1,122 @@
 [gd_scene format=3 uid="uid://bgh36lpvusjqr"]
 
 [ext_resource type="Script" uid="uid://cj3h0dfap4n4o" path="res://scenes/player.gd" id="1_jej6c"]
-[ext_resource type="Texture2D" uid="uid://c2endu8ssouf5" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Attacking/Wraith_02_Attack_000.png" id="2_hax0n"]
-[ext_resource type="Texture2D" uid="uid://bt1oxo1i46kgm" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Idle/Wraith_02_Idle_000.png" id="2_jej6c"]
-[ext_resource type="Texture2D" uid="uid://6trwanohh8n" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Idle/Wraith_02_Idle_001.png" id="3_f1ej7"]
-[ext_resource type="Texture2D" uid="uid://3crqt6uh4xgu" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Attacking/Wraith_02_Attack_001.png" id="3_t4otl"]
-[ext_resource type="Texture2D" uid="uid://du7ei871fk0lc" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Attacking/Wraith_02_Attack_002.png" id="4_j2b1d"]
-[ext_resource type="Texture2D" uid="uid://cx5qwwaneonng" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Idle/Wraith_02_Idle_002.png" id="4_oprun"]
-[ext_resource type="Texture2D" uid="uid://m50q3dlb3kih" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Idle/Wraith_02_Idle_003.png" id="5_a8ls1"]
-[ext_resource type="Texture2D" uid="uid://u330xttit417" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Attacking/Wraith_02_Attack_003.png" id="5_cs1tg"]
-[ext_resource type="Texture2D" uid="uid://cne5kvxrhk0lb" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Attacking/Wraith_02_Attack_004.png" id="6_2dvfe"]
-[ext_resource type="Texture2D" uid="uid://pqwgnuxpdto4" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Idle/Wraith_02_Idle_004.png" id="6_qfm1y"]
-[ext_resource type="Texture2D" uid="uid://cwaepf8k6njv4" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Idle/Wraith_02_Idle_005.png" id="7_fulsm"]
-[ext_resource type="Texture2D" uid="uid://es5fq2wm7pfd" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Attacking/Wraith_02_Attack_005.png" id="7_giy8y"]
-[ext_resource type="Texture2D" uid="uid://cmpju2wnaj8jc" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Idle/Wraith_02_Idle_006.png" id="8_4r5pv"]
-[ext_resource type="Texture2D" uid="uid://cea3v3x2dsdqm" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Attacking/Wraith_02_Attack_006.png" id="8_fdfoy"]
-[ext_resource type="Texture2D" uid="uid://d4iq7o7r1rbj4" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Idle/Wraith_02_Idle_007.png" id="9_60mlk"]
-[ext_resource type="Texture2D" uid="uid://ii1qr2mpt12g" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Attacking/Wraith_02_Attack_007.png" id="9_hhpqf"]
-[ext_resource type="Texture2D" uid="uid://crfa0mixiiifa" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Attacking/Wraith_02_Attack_008.png" id="10_g5jhy"]
-[ext_resource type="Texture2D" uid="uid://diwjswds3gho1" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Idle/Wraith_02_Idle_008.png" id="10_i4ail"]
-[ext_resource type="Texture2D" uid="uid://c0i51hwtx6jrh" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Idle/Wraith_02_Idle_009.png" id="11_a38lo"]
-[ext_resource type="Texture2D" uid="uid://bhegqoc2cejjv" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Attacking/Wraith_02_Attack_009.png" id="11_holxr"]
-[ext_resource type="Texture2D" uid="uid://ba03o6sudt5ht" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Idle/Wraith_02_Idle_010.png" id="12_4ni07"]
-[ext_resource type="Texture2D" uid="uid://ev2r2n0rbl6e" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Attacking/Wraith_02_Attack_010.png" id="12_mx1m4"]
-[ext_resource type="Texture2D" uid="uid://baf4vgdxrnk4s" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Attacking/Wraith_02_Attack_011.png" id="13_4gjji"]
-[ext_resource type="Texture2D" uid="uid://byjk5yq3rhu4q" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Idle/Wraith_02_Idle_011.png" id="13_l71n6"]
-[ext_resource type="Texture2D" uid="uid://gvccbaafu32q" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Walking/Wraith_02_Moving Forward_000.png" id="14_ke2ow"]
-[ext_resource type="Texture2D" uid="uid://cg8ytbn7sxkxl" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Walking/Wraith_02_Moving Forward_001.png" id="15_ujl30"]
-[ext_resource type="Texture2D" uid="uid://dw4ike47g4lu4" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Walking/Wraith_02_Moving Forward_002.png" id="16_31cv2"]
-[ext_resource type="Texture2D" uid="uid://cewy5ofwwu8fv" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Walking/Wraith_02_Moving Forward_003.png" id="17_pf23h"]
-[ext_resource type="Texture2D" uid="uid://bxxcq4pvq3o8r" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Walking/Wraith_02_Moving Forward_004.png" id="18_dt7fs"]
-[ext_resource type="Texture2D" uid="uid://bckoci8cc00yr" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Walking/Wraith_02_Moving Forward_005.png" id="19_wqfne"]
-[ext_resource type="Texture2D" uid="uid://cpcko0kyux2r2" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Walking/Wraith_02_Moving Forward_006.png" id="20_wnwbv"]
-[ext_resource type="Texture2D" uid="uid://56chbwxcvy6e" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Walking/Wraith_02_Moving Forward_007.png" id="21_gl8cc"]
-[ext_resource type="Texture2D" uid="uid://bk1b6qasn2l4q" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Walking/Wraith_02_Moving Forward_008.png" id="22_487ah"]
-[ext_resource type="Texture2D" uid="uid://diqjulrhbnx1d" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Walking/Wraith_02_Moving Forward_009.png" id="23_md1ol"]
-[ext_resource type="Texture2D" uid="uid://dwh6t3fhdm37j" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Walking/Wraith_02_Moving Forward_010.png" id="24_bj30b"]
-[ext_resource type="Texture2D" uid="uid://dsh0fevhgjuxf" path="res://Graphics/Characters/PNG/Wraith_02/PNG Sequences/Walking/Wraith_02_Moving Forward_011.png" id="25_jc3p3"]
+[ext_resource type="Texture2D" uid="uid://c2endu8ssouf5" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-right/Wraith_02_Attack_000.png" id="2_hax0n"]
+[ext_resource type="Texture2D" uid="uid://bt1oxo1i46kgm" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-right/Wraith_02_Idle_000.png" id="2_jej6c"]
+[ext_resource type="Texture2D" uid="uid://ce2lsibhytsxk" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-left/Pi7_Wraith_02_Attack_000.png" id="2_qsb7e"]
+[ext_resource type="Texture2D" uid="uid://6trwanohh8n" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-right/Wraith_02_Idle_001.png" id="3_f1ej7"]
+[ext_resource type="Texture2D" uid="uid://3g74wt8aefg8" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-left/Pi7_Wraith_02_Attack_001.png" id="3_qjsmb"]
+[ext_resource type="Texture2D" uid="uid://3crqt6uh4xgu" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-right/Wraith_02_Attack_001.png" id="3_t4otl"]
+[ext_resource type="Texture2D" uid="uid://du7ei871fk0lc" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-right/Wraith_02_Attack_002.png" id="4_j2b1d"]
+[ext_resource type="Texture2D" uid="uid://dajnuhwhj8r2l" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-left/Pi7_Wraith_02_Attack_002.png" id="4_mwp2n"]
+[ext_resource type="Texture2D" uid="uid://cx5qwwaneonng" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-right/Wraith_02_Idle_002.png" id="4_oprun"]
+[ext_resource type="Texture2D" uid="uid://bpjfwsmmd0auc" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-left/Pi7_Wraith_02_Attack_003.png" id="5_0yhus"]
+[ext_resource type="Texture2D" uid="uid://m50q3dlb3kih" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-right/Wraith_02_Idle_003.png" id="5_a8ls1"]
+[ext_resource type="Texture2D" uid="uid://u330xttit417" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-right/Wraith_02_Attack_003.png" id="5_cs1tg"]
+[ext_resource type="Texture2D" uid="uid://cne5kvxrhk0lb" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-right/Wraith_02_Attack_004.png" id="6_2dvfe"]
+[ext_resource type="Texture2D" uid="uid://kdxew560ufjv" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-left/Pi7_Wraith_02_Attack_004.png" id="6_jlll7"]
+[ext_resource type="Texture2D" uid="uid://pqwgnuxpdto4" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-right/Wraith_02_Idle_004.png" id="6_qfm1y"]
+[ext_resource type="Texture2D" uid="uid://cwaepf8k6njv4" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-right/Wraith_02_Idle_005.png" id="7_fulsm"]
+[ext_resource type="Texture2D" uid="uid://es5fq2wm7pfd" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-right/Wraith_02_Attack_005.png" id="7_giy8y"]
+[ext_resource type="Texture2D" uid="uid://drupa3m605sh" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-left/Pi7_Wraith_02_Attack_005.png" id="7_qk6i7"]
+[ext_resource type="Texture2D" uid="uid://cmpju2wnaj8jc" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-right/Wraith_02_Idle_006.png" id="8_4r5pv"]
+[ext_resource type="Texture2D" uid="uid://b17u6uamh45ww" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-left/Pi7_Wraith_02_Attack_006.png" id="8_6c3st"]
+[ext_resource type="Texture2D" uid="uid://cea3v3x2dsdqm" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-right/Wraith_02_Attack_006.png" id="8_fdfoy"]
+[ext_resource type="Texture2D" uid="uid://cjqja6tk5qf6e" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-left/Pi7_Wraith_02_Attack_007.png" id="9_1da1t"]
+[ext_resource type="Texture2D" uid="uid://d4iq7o7r1rbj4" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-right/Wraith_02_Idle_007.png" id="9_60mlk"]
+[ext_resource type="Texture2D" uid="uid://ii1qr2mpt12g" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-right/Wraith_02_Attack_007.png" id="9_hhpqf"]
+[ext_resource type="Texture2D" uid="uid://crfa0mixiiifa" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-right/Wraith_02_Attack_008.png" id="10_g5jhy"]
+[ext_resource type="Texture2D" uid="uid://diwjswds3gho1" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-right/Wraith_02_Idle_008.png" id="10_i4ail"]
+[ext_resource type="Texture2D" uid="uid://dlfvak7mbyp1p" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-left/Pi7_Wraith_02_Attack_008.png" id="10_p21yu"]
+[ext_resource type="Texture2D" uid="uid://c0i51hwtx6jrh" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-right/Wraith_02_Idle_009.png" id="11_a38lo"]
+[ext_resource type="Texture2D" uid="uid://bhegqoc2cejjv" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-right/Wraith_02_Attack_009.png" id="11_holxr"]
+[ext_resource type="Texture2D" uid="uid://blmq0f43uoni1" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-left/Pi7_Wraith_02_Attack_009.png" id="11_irpag"]
+[ext_resource type="Texture2D" uid="uid://ba03o6sudt5ht" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-right/Wraith_02_Idle_010.png" id="12_4ni07"]
+[ext_resource type="Texture2D" uid="uid://c15bpb8pf71qm" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-left/Pi7_Wraith_02_Attack_010.png" id="12_bpsgo"]
+[ext_resource type="Texture2D" uid="uid://ev2r2n0rbl6e" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-right/Wraith_02_Attack_010.png" id="12_mx1m4"]
+[ext_resource type="Texture2D" uid="uid://baf4vgdxrnk4s" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-right/Wraith_02_Attack_011.png" id="13_4gjji"]
+[ext_resource type="Texture2D" uid="uid://cxm5rcvfip7a4" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Attacking-left/Pi7_Wraith_02_Attack_011.png" id="13_jx8is"]
+[ext_resource type="Texture2D" uid="uid://byjk5yq3rhu4q" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-right/Wraith_02_Idle_011.png" id="13_l71n6"]
+[ext_resource type="Texture2D" uid="uid://gvccbaafu32q" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-right/Wraith_02_Moving Forward_000.png" id="14_ke2ow"]
+[ext_resource type="Texture2D" uid="uid://cg8ytbn7sxkxl" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-right/Wraith_02_Moving Forward_001.png" id="15_ujl30"]
+[ext_resource type="Texture2D" uid="uid://dw4ike47g4lu4" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-right/Wraith_02_Moving Forward_002.png" id="16_31cv2"]
+[ext_resource type="Texture2D" uid="uid://cewy5ofwwu8fv" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-right/Wraith_02_Moving Forward_003.png" id="17_pf23h"]
+[ext_resource type="Texture2D" uid="uid://bxxcq4pvq3o8r" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-right/Wraith_02_Moving Forward_004.png" id="18_dt7fs"]
+[ext_resource type="Texture2D" uid="uid://bckoci8cc00yr" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-right/Wraith_02_Moving Forward_005.png" id="19_wqfne"]
+[ext_resource type="Texture2D" uid="uid://cpcko0kyux2r2" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-right/Wraith_02_Moving Forward_006.png" id="20_wnwbv"]
+[ext_resource type="Texture2D" uid="uid://56chbwxcvy6e" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-right/Wraith_02_Moving Forward_007.png" id="21_gl8cc"]
+[ext_resource type="Texture2D" uid="uid://bk1b6qasn2l4q" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-right/Wraith_02_Moving Forward_008.png" id="22_487ah"]
+[ext_resource type="Texture2D" uid="uid://diqjulrhbnx1d" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-right/Wraith_02_Moving Forward_009.png" id="23_md1ol"]
+[ext_resource type="Texture2D" uid="uid://dwh6t3fhdm37j" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-right/Wraith_02_Moving Forward_010.png" id="24_bj30b"]
+[ext_resource type="Texture2D" uid="uid://dsh0fevhgjuxf" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-right/Wraith_02_Moving Forward_011.png" id="25_jc3p3"]
+[ext_resource type="Texture2D" uid="uid://1a4gua38n6t5" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-left/Pi7_Wraith_02_Idle_000.png" id="26_vx63k"]
+[ext_resource type="Texture2D" uid="uid://drpcgp1s4bpao" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-left/Pi7_Wraith_02_Idle_001.png" id="27_lw0jh"]
+[ext_resource type="Texture2D" uid="uid://d34smymi27qa2" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-left/Pi7_Wraith_02_Idle_002.png" id="28_ry8ed"]
+[ext_resource type="Texture2D" uid="uid://dioae4wvkio20" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-left/Pi7_Wraith_02_Idle_003.png" id="29_au8ao"]
+[ext_resource type="Texture2D" uid="uid://dihfsr77umcer" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-left/Pi7_Wraith_02_Idle_004.png" id="30_w5j5w"]
+[ext_resource type="Texture2D" uid="uid://qdivp21avvsm" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-left/Pi7_Wraith_02_Idle_005.png" id="31_cbf1i"]
+[ext_resource type="Texture2D" uid="uid://c0nrrtrxslxmd" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-left/Pi7_Wraith_02_Idle_006.png" id="32_4vfid"]
+[ext_resource type="Texture2D" uid="uid://beukb5bidn105" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-left/Pi7_Wraith_02_Idle_007.png" id="33_ljgr3"]
+[ext_resource type="Texture2D" uid="uid://bm7fobcqjq1iu" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-left/Pi7_Wraith_02_Idle_008.png" id="34_fr8ja"]
+[ext_resource type="Texture2D" uid="uid://c3tf5ysng04fj" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-left/Pi7_Wraith_02_Idle_009.png" id="35_gvmy4"]
+[ext_resource type="Texture2D" uid="uid://cfctqwegorxhv" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-left/Pi7_Wraith_02_Idle_010.png" id="36_fcu33"]
+[ext_resource type="Texture2D" uid="uid://b5ntddg5quagw" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Idle-left/Pi7_Wraith_02_Idle_011.png" id="37_qmsq4"]
+[ext_resource type="Texture2D" uid="uid://3bldks1leqq8" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-left/Pi7_Wraith_02_Moving Forward_000.png" id="50_5vs2b"]
+[ext_resource type="Texture2D" uid="uid://d0u3l6y48g5tp" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-left/Pi7_Wraith_02_Moving Forward_001.png" id="51_a7i4v"]
+[ext_resource type="Texture2D" uid="uid://c0pdensdwxtwi" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-left/Pi7_Wraith_02_Moving Forward_002.png" id="52_b5l0c"]
+[ext_resource type="Texture2D" uid="uid://bwb0pif8yv0gq" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-left/Pi7_Wraith_02_Moving Forward_003.png" id="53_2a33p"]
+[ext_resource type="Texture2D" uid="uid://c8pkwykckmnli" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-left/Pi7_Wraith_02_Moving Forward_004.png" id="54_reqs7"]
+[ext_resource type="Texture2D" uid="uid://py1ov05fflc7" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-left/Pi7_Wraith_02_Moving Forward_005.png" id="55_2yjfb"]
+[ext_resource type="Texture2D" uid="uid://bht6i2dtb32m4" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-left/Pi7_Wraith_02_Moving Forward_006.png" id="56_dnnjp"]
+[ext_resource type="Texture2D" uid="uid://c0pnbjl2ctpdj" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-left/Pi7_Wraith_02_Moving Forward_007.png" id="57_wqna8"]
+[ext_resource type="Texture2D" uid="uid://ccxxtju5cutjh" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-left/Pi7_Wraith_02_Moving Forward_008.png" id="58_l7gmo"]
+[ext_resource type="Texture2D" uid="uid://d0kyx6q78ks63" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-left/Pi7_Wraith_02_Moving Forward_009.png" id="59_kft7l"]
+[ext_resource type="Texture2D" uid="uid://cdn233d288evo" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-left/Pi7_Wraith_02_Moving Forward_010.png" id="60_2s4os"]
+[ext_resource type="Texture2D" uid="uid://dl6ekn4ml3c40" path="res://Graphics/Characters/PNG/Player/PNG Sequences/Walking-left/Pi7_Wraith_02_Moving Forward_011.png" id="61_2em0j"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_l71n6"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_qsb7e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qjsmb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_mwp2n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_0yhus")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_jlll7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qk6i7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_6c3st")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_1da1t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_p21yu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_irpag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_bpsgo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_jx8is")
+}],
+"loop": false,
+"name": &"attack-left",
+"speed": 20.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_hax0n")
@@ -78,8 +155,49 @@ animations = [{
 "texture": ExtResource("13_4gjji")
 }],
 "loop": false,
-"name": &"attack",
+"name": &"attack-right",
 "speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_vx63k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_lw0jh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_ry8ed")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_au8ao")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_w5j5w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_cbf1i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_4vfid")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_ljgr3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_fr8ja")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_gvmy4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_fcu33")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_qmsq4")
+}],
+"loop": true,
+"name": &"static-left",
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -119,8 +237,49 @@ animations = [{
 "texture": ExtResource("13_l71n6")
 }],
 "loop": true,
-"name": &"static",
+"name": &"static-right",
 "speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("50_5vs2b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_a7i4v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_b5l0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_2a33p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_reqs7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_2yjfb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_dnnjp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_wqna8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_l7gmo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_kft7l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_2s4os")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_2em0j")
+}],
+"loop": true,
+"name": &"walking-left",
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -190,12 +349,12 @@ animations = [{
 "texture": ExtResource("24_bj30b")
 }],
 "loop": true,
-"name": &"walking",
+"name": &"walking-right",
 "speed": 10.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u2ulf"]
-size = Vector2(107, 139)
+size = Vector2(108, 144)
 
 [node name="Player" type="CharacterBody2D" unique_id=1637845224]
 script = ExtResource("1_jej6c")
@@ -203,14 +362,15 @@ script = ExtResource("1_jej6c")
 [node name="PlayerSprite" type="AnimatedSprite2D" parent="." unique_id=2141798055]
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_l71n6")
-animation = &"attack"
-autoplay = "static"
-frame = 1
-frame_progress = 0.22086969
+animation = &"attack-left"
+autoplay = "static-right"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2025985522]
-position = Vector2(-1.5, -14.5)
+position = Vector2(-1, -14)
 shape = SubResource("RectangleShape2D_u2ulf")
 
-[node name="AttackStartPosition" type="Marker2D" parent="." unique_id=1098246929]
-position = Vector2(80, 8)
+[node name="AttackRightStartPosition" type="Marker2D" parent="." unique_id=1098246929]
+position = Vector2(140, 0)
+
+[node name="AttackLeftStartPosition" type="Marker2D" parent="." unique_id=1931110486]
+position = Vector2(-140, 0)
