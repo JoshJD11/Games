@@ -8,7 +8,7 @@ var attacking := false
 var facing := 'right'
 
 func _ready() -> void:
-	pass
+	add_to_group('player')
 
 func _process(_delta: float) -> void:
 	var direction = Input.get_vector("left", "right", "up", "down")

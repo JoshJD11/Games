@@ -54,3 +54,11 @@ shape = SubResource("RectangleShape2D_ppgk2")
 position = Vector2(613, 520)
 
 [node name="Attacks" type="Node2D" parent="." unique_id=633133747]
+
+[node name="Enemies" type="Node2D" parent="." unique_id=1325280680]
+
+[node name="EnemyTimer" type="Timer" parent="." unique_id=2133596678]
+wait_time = 3.0
+autostart = true
+
+[connection signal="timeout" from="EnemyTimer" to="." method="_on_enemy_timer_timeout"]
