@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://k6wq5i7qpv56"]
+
+[ext_resource type="Script" uid="uid://b4of6us1oemol" path="res://scenes/enemy.gd" id="1_c4w8v"]
+[ext_resource type="Texture2D" uid="uid://cb6h4y2lka3u8" path="res://super_white_guy_assets/front-walk/front-walk001.png" id="2_xwavj"]
+[ext_resource type="Texture2D" uid="uid://b2xi2clwxtj77" path="res://super_white_guy_assets/front-walk/front-walk000.png" id="3_nenq2"]
+[ext_resource type="Texture2D" uid="uid://duvte0qm7cdgm" path="res://super_white_guy_assets/front-walk/front-walk002.png" id="4_md484"]
+[ext_resource type="Texture2D" uid="uid://2vrujt72s1k" path="res://super_white_guy_assets/front-walk/front-walk003.png" id="5_ipns3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8qclf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xwavj")
+}],
+"loop": true,
+"name": &"idle-front",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_nenq2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_xwavj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_md484")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ipns3")
+}],
+"loop": true,
+"name": &"walk-front",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w8i8w"]
+size = Vector2(30, 32)
+
+[node name="Enemy" type="CharacterBody2D" unique_id=589661290]
+script = ExtResource("1_c4w8v")
+
+[node name="EnemySprite" type="AnimatedSprite2D" parent="." unique_id=1270212139]
+sprite_frames = SubResource("SpriteFrames_8qclf")
+animation = &"idle-front"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=627997072]
+shape = SubResource("RectangleShape2D_w8i8w")
