@@ -383,6 +383,11 @@ size = Vector2(20, 310)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_klq6b"]
 size = Vector2(479, 20)
 
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_mx8sn"]
+vertices = PackedVector2Array(469, 10.96875, 469, 262, 10.9296875, 262, 9.0703125, 10.0234375)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-1, 0, 1, 272, 479, 272, 479, 1)])
+
 [node name="level" type="Node2D" unique_id=174627415]
 script = ExtResource("1_w7c3h")
 
@@ -438,3 +443,6 @@ scale = Vector2(0.5, 0.5)
 actual_color = "rose"
 
 [node name="Shoots" type="Node2D" parent="." unique_id=1430841333]
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=1240227204]
+navigation_polygon = SubResource("NavigationPolygon_mx8sn")

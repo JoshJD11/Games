@@ -39,6 +39,7 @@ size = Vector2(30, 32)
 
 [node name="Enemy" type="CharacterBody2D" unique_id=589661290]
 script = ExtResource("1_c4w8v")
+speed = 100.0
 
 [node name="EnemySprite" type="AnimatedSprite2D" parent="." unique_id=1270212139]
 sprite_frames = SubResource("SpriteFrames_8qclf")
@@ -46,3 +47,14 @@ animation = &"idle-front"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=627997072]
 shape = SubResource("RectangleShape2D_w8i8w")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1022492551]
+path_desired_distance = 8.0
+target_desired_distance = 12.0
+avoidance_enabled = true
+
+[node name="RepathTimer" type="Timer" parent="." unique_id=921195594]
+wait_time = 0.3
+autostart = true
+
+[connection signal="timeout" from="RepathTimer" to="." method="_on_repath_timer_timeout"]

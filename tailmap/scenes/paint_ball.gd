@@ -3,6 +3,7 @@ extends Area2D
 @export var speed := 350.0
 var color := 'red'
 var direction = Vector2.ZERO
+var owner_player
 
 func _ready() -> void:
 	pass
@@ -12,8 +13,7 @@ func _process(delta):
 	
 
 func _on_body_entered(body: Node2D) -> void: # I will have to check who shooted, careful with this
-	print('collision')
-	if not body.is_in_group('player'):
-		if body.is_in_group('enemy'):
+	if body != owner_player:
+		if body.is_in_group('players'):
 			body.actual_color = color
 		queue_free()

@@ -15,6 +15,7 @@ func shoot():
 	bullet.global_position = global_position
 	bullet.direction = dir
 	bullet.color = last_color # careful here
+	bullet.owner_player = self
 	ColorUtils.change_color(bullet.get_node('PaintBallImage'), last_color)
 	get_tree().current_scene.get_node('Shoots').add_child(bullet)
 	
@@ -22,7 +23,7 @@ func shoot():
 func _ready() -> void:
 	var size = get_viewport().get_visible_rect().size
 	position = Vector2(size.x/2, size.y/2)
-	add_to_group('player')
+	add_to_group('players')
 
 
 func _process(_delta: float) -> void:
@@ -39,6 +40,5 @@ func _process(_delta: float) -> void:
 		shoot()
 		
 	if last_color != actual_color:
-		print('diff colors')
 		ColorUtils.change_color(sprite, actual_color)
 		last_color = actual_color
