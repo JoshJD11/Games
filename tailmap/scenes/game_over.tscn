@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://c1qkdbxlm3e3o"]
+
+[ext_resource type="Script" uid="uid://d1k6isqanxj15" path="res://scenes/game_over.gd" id="1_xeevv"]
+
+[node name="GameOver" type="Control" unique_id=1963706607]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xeevv")
+
+[node name="BG" type="ColorRect" parent="." unique_id=517996470]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(12.006126, 6.7499576)
+color = Color(0.20784314, 0.22352941, 0.28627452, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=286531638]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -25.0
+offset_right = 20.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1857977006]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1118271923]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Game Over"
+
+[node name="Label2" type="Label" parent="CenterContainer/VBoxContainer" unique_id=497885521]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "¡All the players have the same color!"
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1738958979]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -0.5
+offset_top = -23.0
+offset_right = 0.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 20
+
+[node name="Label" type="Label" parent="MarginContainer" unique_id=906163726]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 8
+text = "Press space to start again"

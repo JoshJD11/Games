@@ -16,4 +16,5 @@ func _on_body_entered(body: Node2D) -> void: # I will have to check who shooted,
 	if body != owner_player:
 		if body.is_in_group('players'):
 			body.actual_color = color
+			get_tree().call_group("level", "check_game_state") # This is to check if the game finished
 		queue_free()
