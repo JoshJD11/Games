@@ -384,9 +384,9 @@ size = Vector2(20, 310)
 size = Vector2(479, 20)
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_mx8sn"]
-vertices = PackedVector2Array(469, 10.96875, 469, 262, 10.9296875, 262, 9.0703125, 10.0234375)
+vertices = PackedVector2Array(470, 261, 10.9609375, 261, 10.0390625, 10, 470, 10)
 polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(-1, 0, 1, 272, 479, 272, 479, 1)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(1, 271, 480, 271, 480, 0, 0, 0)])
 
 [node name="level" type="Node2D" unique_id=174627415]
 script = ExtResource("1_w7c3h")

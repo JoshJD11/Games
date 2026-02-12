@@ -32,9 +32,9 @@ func _process(_delta: float) -> void:
 	move_and_slide()
 	
 	if direction:
-		sprite.play('front-walk')
+		GeneralUtils.set_animation(sprite, 'front-walk')
 	else:
-		sprite.play("front-idle")
+		GeneralUtils.set_animation(sprite, 'front-idle')
 		
 	if Input.is_action_just_pressed("shoot"):
 		shoot()

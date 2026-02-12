@@ -37,6 +37,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w8i8w"]
 size = Vector2(30, 32)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_c4w8v"]
+radius = 104.00481
+
 [node name="Enemy" type="CharacterBody2D" unique_id=589661290]
 script = ExtResource("1_c4w8v")
 speed = 100.0
@@ -45,16 +48,26 @@ speed = 100.0
 sprite_frames = SubResource("SpriteFrames_8qclf")
 animation = &"idle-front"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=627997072]
+[node name="HitBox" type="CollisionShape2D" parent="." unique_id=627997072]
 shape = SubResource("RectangleShape2D_w8i8w")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1022492551]
 path_desired_distance = 8.0
-target_desired_distance = 12.0
+target_desired_distance = 100.0
 avoidance_enabled = true
 
 [node name="RepathTimer" type="Timer" parent="." unique_id=921195594]
 wait_time = 0.3
 autostart = true
 
+[node name="AttackRange" type="Area2D" parent="." unique_id=468167041]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackRange" unique_id=293536342]
+shape = SubResource("CircleShape2D_c4w8v")
+
+[node name="AttackTimer" type="Timer" parent="." unique_id=1951329672]
+
 [connection signal="timeout" from="RepathTimer" to="." method="_on_repath_timer_timeout"]
+[connection signal="body_entered" from="AttackRange" to="." method="_on_attack_range_body_entered"]
+[connection signal="body_exited" from="AttackRange" to="." method="_on_attack_range_body_exited"]
+[connection signal="timeout" from="AttackTimer" to="." method="_on_attack_timer_timeout"]
