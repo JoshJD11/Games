@@ -52,7 +52,7 @@ func chase_target():
 		agent.target_position = target.global_position
 
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if agent.is_navigation_finished():
 		velocity = Vector2.ZERO
 		GeneralUtils.set_animation(sprite, 'idle-front')
@@ -81,11 +81,11 @@ func _on_repath_timer_timeout() -> void:
 	chase_target()
 
 
-func _on_attack_range_body_entered(body: Node2D) -> void:
+func _on_attack_range_body_entered(_body: Node2D) -> void:
 	cant_enemies_in_range += 1
 
 
-func _on_attack_range_body_exited(body: Node2D) -> void:
+func _on_attack_range_body_exited(_body: Node2D) -> void:
 	cant_enemies_in_range -= 1
 
 

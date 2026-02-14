@@ -21,8 +21,8 @@ func shoot():
 	
 
 func _ready() -> void:
-	var size = get_viewport().get_visible_rect().size
-	position = Vector2(size.x/2, size.y/2)
+	#var size = get_viewport().get_visible_rect().size
+	#position = Vector2(size.x/2, size.y/2)
 	add_to_group('players')
 
 
