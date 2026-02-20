@@ -28,6 +28,17 @@ func shoot():
 	get_tree().current_scene.get_node("Shoots").add_child(bullet)
 
 
+func can_see_target(): # New approach
+	$RayCast2D.target_position = $RayCast2D.to_local(target.global_position)
+	$RayCast2D.force_raycast_update()
+
+	if $RayCast2D.is_colliding():
+		var collider = $RayCast2D.get_collider()
+		print(collider)
+		return collider == target
+	
+	return false
+
 
 func get_closest_target() -> void:
 	var closest = null
@@ -68,6 +79,7 @@ func _physics_process(_delta):
 
 func _ready() -> void:
 	$AttackTimer.start()
+	# $RayCast2D.add_exception(self) #watch out
 	add_to_group('players')
 
 
@@ -90,6 +102,6 @@ func _on_attack_range_body_exited(_body: Node2D) -> void:
 
 
 func _on_attack_timer_timeout() -> void:
-	if cant_enemies_in_range > 0:
+	if cant_enemies_in_range > 0 and can_see_target(): # and can see target
 		shoot()
 		$AttackTimer.start()

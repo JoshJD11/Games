@@ -450,7 +450,6 @@ polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2), PackedInt32Array(
 outlines = Array[PackedVector2Array]([PackedVector2Array(384, -272, 384, -256, 399, -256, 399, -225, 384, -225, 384, -209, 281, -208, 282, 17, 288, 17, 288, 0, 472, 0, 474, 80, 463, 80, 463, 96, 663, 97, 662, -2, 673, 0, 673, -16, 689, -16, 688, -32, 720, -32, 720, -16, 735, -16, 735, 0, 746, 0, 745, 160, 463, 160, 464, 177, 474, 176, 474, 257, 288, 255, 288, 238, 281, 238, 281, 464, 382, 464, 383, 480, 400, 481, 400, 512, 383, 512, 383, 527, 198, 528, 198, 237, 192, 237, 192, 255, 7, 255, 7, 176, 17, 176, 18, 159, -184, 160, -182, 256, -192, 256, -192, 271, -208, 271, -208, 286, -239, 287, -240, 272, -256, 272, -256, 256, -265, 256, -266, 96, 15, 96, 16, 81, 6, 77, 6, -1, 191, 0, 191, 17, 199, 16, 198, -272)])
 
 [node name="level" type="Node2D" unique_id=174627415]
-position = Vector2(-1, 10)
 script = ExtResource("1_w7c3h")
 metadata/_edit_group_ = true
 
@@ -469,54 +468,6 @@ position = Vector2(383, 496)
 position = Vector2(-239, 238)
 scale = Vector2(0.5, 0.5)
 actual_color = "blue"
-
-[node name="Enemy2" parent="Enemies" unique_id=1551535910 instance=ExtResource("4_mx8sn")]
-position = Vector2(-224, 265)
-scale = Vector2(0.5, 0.5)
-actual_color = "blue"
-
-[node name="Enemy3" parent="Enemies" unique_id=364862789 instance=ExtResource("4_mx8sn")]
-position = Vector2(-200, 237)
-scale = Vector2(0.5, 0.5)
-actual_color = "blue"
-
-[node name="Enemy4" parent="Enemies" unique_id=1130615014 instance=ExtResource("4_mx8sn")]
-position = Vector2(359, -226)
-scale = Vector2(0.5, 0.5)
-actual_color = "green"
-
-[node name="Enemy5" parent="Enemies" unique_id=153779330 instance=ExtResource("4_mx8sn")]
-position = Vector2(358, -254)
-scale = Vector2(0.5, 0.5)
-actual_color = "green"
-
-[node name="Enemy6" parent="Enemies" unique_id=1361132354 instance=ExtResource("4_mx8sn")]
-position = Vector2(384, -241)
-scale = Vector2(0.5, 0.5)
-actual_color = "green"
-
-[node name="Enemy7" parent="Enemies" unique_id=578475345 instance=ExtResource("4_mx8sn")]
-position = Vector2(720, 4)
-scale = Vector2(0.5, 0.5)
-actual_color = "rose"
-
-[node name="Enemy8" parent="Enemies" unique_id=675919272 instance=ExtResource("4_mx8sn")]
-position = Vector2(693, 5)
-scale = Vector2(0.5, 0.5)
-actual_color = "rose"
-
-[node name="Enemy9" parent="Enemies" unique_id=716400324 instance=ExtResource("4_mx8sn")]
-position = Vector2(704, -16)
-scale = Vector2(0.5, 0.5)
-actual_color = "rose"
-
-[node name="Enemy10" parent="Enemies" unique_id=1089463678 instance=ExtResource("4_mx8sn")]
-position = Vector2(364, 508)
-scale = Vector2(0.5, 0.5)
-
-[node name="Enemy11" parent="Enemies" unique_id=603048475 instance=ExtResource("4_mx8sn")]
-position = Vector2(360, 483)
-scale = Vector2(0.5, 0.5)
 
 [node name="Shoots" type="Node2D" parent="." unique_id=1430841333]
 

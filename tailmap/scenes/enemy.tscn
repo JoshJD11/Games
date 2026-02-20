@@ -67,6 +67,8 @@ shape = SubResource("CircleShape2D_c4w8v")
 
 [node name="AttackTimer" type="Timer" parent="." unique_id=1951329672]
 
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=1529097854]
+
 [connection signal="timeout" from="RepathTimer" to="." method="_on_repath_timer_timeout"]
 [connection signal="body_entered" from="AttackRange" to="." method="_on_attack_range_body_entered"]
 [connection signal="body_exited" from="AttackRange" to="." method="_on_attack_range_body_exited"]
