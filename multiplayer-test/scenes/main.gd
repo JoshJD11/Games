@@ -3,8 +3,12 @@ extends Node
 @onready var address = $UI/BoxContainer/VBoxContainer/LineEdit.text
 
 func _ready() -> void:
+	
+	print("Feature server: ", OS.has_feature("server"))
+	
 	if OS.has_feature("server"):
 		$ServerManager.create_server()
+	
 	else:
 		$UI.show()
 

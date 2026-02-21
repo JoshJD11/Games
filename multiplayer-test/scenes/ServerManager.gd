@@ -13,6 +13,7 @@ func create_server(_port: int = port):
 	multiplayer.multiplayer_peer = peer
 	multiplayer.peer_connected.connect(on_peer_connected)
 	multiplayer.peer_disconnected.connect(on_peer_disconnected)
+	print("Server created at port: ", _port)
 	
 
 func create_client(address: String):

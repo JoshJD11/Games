@@ -45,7 +45,7 @@ size_flags_horizontal = 0
 
 [node name="LineEdit" type="LineEdit" parent="UI/BoxContainer/VBoxContainer" unique_id=672871888]
 layout_mode = 2
-text = "127.0.0.1"
+text = "151.145.32.65"
 
 [node name="join" type="Button" parent="UI/BoxContainer/VBoxContainer" unique_id=1051244179]
 layout_mode = 2

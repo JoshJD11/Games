@@ -5,9 +5,9 @@ const SPEED := 300.0
 var input_direction: Vector2 = Vector2.ZERO
 
 
-func _set_animation(name: String) -> void: # I wont use this for now
-	if sprite.animation != name:
-		sprite.play(name)
+func set_animation(animation_name: String) -> void: 
+	if sprite.animation != animation_name:
+		sprite.play(animation_name)
 
 
 func _ready() -> void:
@@ -17,7 +17,7 @@ func _ready() -> void:
 		set_physics_process(false)
 
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if multiplayer.is_server():
 		return
 	var dir = Input.get_vector("left", "right", "up", "down")
@@ -31,8 +31,10 @@ func _physics_process(_delta: float) -> void:
 		velocity = SPEED * input_direction
 		move_and_slide()
 		rpc("sync_position", global_position)
+		set_animation('walk')
 	else:
 		velocity = Vector2.ZERO
+		set_animation("idle")
 
 
 @rpc("any_peer")
