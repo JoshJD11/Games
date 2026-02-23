@@ -3,31 +3,56 @@ extends Node
 
 @export var Player: PackedScene
 @export var max_clients: int = 10
-@export var port: int = 7777 # Be careful with the port
+@export var port: int = 7778 # Be careful with the port
 @export var main_scene: Node
 var peer = ENetMultiplayerPeer.new()
 
 
 func create_server(_port: int = port):
-	peer.create_server(_port, max_clients)
+	print("Intento de crear servidor en el puerto: ", _port)
+	var error = peer.create_server(_port, max_clients)
+	print("Error: ", error)
+	
 	multiplayer.multiplayer_peer = peer
 	multiplayer.peer_connected.connect(on_peer_connected)
 	multiplayer.peer_disconnected.connect(on_peer_disconnected)
-	print("Server created at port: ", _port)
+	
+	print("Soy servidor? ", multiplayer.is_server())
+	print("ID servidor: ", multiplayer.get_unique_id())
 	
 
 func create_client(address: String):
-	peer.create_client(address, port)
+	var error = peer.create_client(address, port)
+	print("Resultado create_client:", error)
+	print("Error string:", error_string(error))
 	multiplayer.multiplayer_peer = peer
-	print("Connecting to server")
+	
+	multiplayer.connected_to_server.connect(_on_connected)
+	multiplayer.connection_failed.connect(_on_connection_failed)
+	multiplayer.server_disconnected.connect(_on_server_disconnected)
+	
 
+func _on_connected():
+	print("✅ CLIENTE: Conectado correctamente al servidor")
+	print("Mi ID es:", multiplayer.get_unique_id())
+
+func _on_connection_failed():
+	print("❌ CLIENTE: Falló la conexión: ")
+	if multiplayer.multiplayer_peer:
+		print("Estado final:", multiplayer.multiplayer_peer.get_connection_status())
+
+func _on_server_disconnected():
+	print("⚠️ CLIENTE: Servidor desconectado")
+	
 
 func on_peer_connected(id):
+	print("debug")
 	if !multiplayer.is_server():
 		return
-	print("Player connected: ", id)
+	print("Jugador conectado: ", str(id))
 	var player = Player.instantiate()
-	player.name = id
+	player.name = str(id)
+	player.set_multiplayer_authority(id) # necessary?
 	main_scene.add_child(player, true)
 
 

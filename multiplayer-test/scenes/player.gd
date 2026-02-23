@@ -18,6 +18,7 @@ func _ready() -> void:
 
 
 func _process(_delta: float) -> void:
+	
 	if multiplayer.is_server():
 		return
 	var dir = Input.get_vector("left", "right", "up", "down")

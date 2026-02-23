@@ -4,7 +4,7 @@ extends Node
 
 func _ready() -> void:
 	
-	print("Feature server: ", OS.has_feature("server"))
+	print("Server feature: ", OS.has_feature("server"))
 	
 	if OS.has_feature("server"):
 		$ServerManager.create_server()
